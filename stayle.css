@@ -240,22 +240,42 @@ header {
 }
 .btn-home2:hover { background: #f4f1ea; }
 
-/* Social Icons */
-.follow { margin-top: 30px; }
-.follow ul { display: flex; gap: 1.5rem; list-style: none; }
-.follow ul li a {
-  display: flex; align-items: center; justify-content: center;
-  width: 40px; height: 40px;
-  font-size: 20px; 
-  color: #5d001e; /* Maroon Icons */
-  border: 1px solid #e0dcd5;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-.follow ul li a:hover {
-  background: #5d001e; color: #fff; border-color: #5d001e;
+/* =========================================
+   FIXED SOCIAL ICONS (Footer & Contact)
+   ========================================= */
+
+/* The Container */
+.social-links {
+    display: flex;             /* Aligns them in a row */
+    gap: 25px;                 /* Adds 25px of space between each icon */
+    align-items: center;       /* Centers them vertically */
+    margin-top: 15px;          /* Adds space above the row */
+    padding-left: 0;           /* Removes default padding */
 }
 
+/* The Individual Icon Links */
+.social-link {
+    text-decoration: none;     
+    display: flex;             
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+/* The Icon Itself */
+.social-link i {
+    font-size: 28px;           /* Sets the size properly */
+    color: #5d001e;            /* Maroon color */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect */
+.social-link:hover {
+    transform: translateY(-3px); 
+}
+.social-link:hover i {
+    color: #8e7f5d;            /* Turns Gold on hover */
+}
 /* =========================================
    6. ABOUT SECTION
    ========================================= */
